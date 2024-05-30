@@ -4,7 +4,8 @@ Assessment Requirements
 2. Create an object inside your mintNFT function that will hold the metadata for your NFTs. 
    The metadata values will be passed to the function as parameters. When the NFT is ready, 
    you will store it in the variable you created in step 1
-3. Your listNFTs() function will print all of your NFTs metadata to the console (i.e. console.log("Name: " + someNFT.name))
+3. Your listNFTs() function will print all of your NFTs metadata to the console 
+   (i.e. console.log("Name: " + someNFT.name))
 4. For good measure, getTotalSupply() should return the number of NFT's you have created
 */
 
@@ -29,11 +30,11 @@ function mintNFT (_name, _eyeColor, _shirtType, _bling) {
 // and print their metadata with console.log()
 function listNFTs () {
     for(let i = 0; i < NFTs.length; i++) {
-        console.log("\nID: \t\t\t\t" + (i + 1));
-        console.log("Name: \t\t\t" + NFTs[i].name);
+        console.log("\nID: \t\t" + (i + 1));
+        console.log("Name: \t\t" + NFTs[i].name);
         console.log("Eye Color: \t" + NFTs[i].eyeColor);
         console.log("Shirt Type: " + NFTs[i].shirtType);
-        console.log("Bling: \t\t\t" + NFTs[i].bling);
+        console.log("Bling: \t\t" + NFTs[i].bling);
     }    
 }
 
